@@ -1,0 +1,74 @@
+PRD.md
+  h_c5a3d01edfee72 10,51,137
+PROJECT_STATUS.md
+  h_c5a3d01edfee72 14-34
+README.md
+  h_c5a3d01edfee72 26
+architecture.md
+  h_c5a3d01edfee72 309
+backend/app/evidence_controller.py
+  h_c5a3d01edfee72 716,727-728,730-732,742-746
+backend/app/evidence_gate.py
+  h_c5a3d01edfee72 87
+backend/app/grievance/input_types.py
+  h_c5a3d01edfee72 43-57,66-113
+backend/app/grievance/models.py
+  h_c5a3d01edfee72 493,519
+backend/app/grievance/status_lookup.py
+  h_c5a3d01edfee72 145-181,186
+backend/app/providers/gnani_voice.py
+  h_c5a3d01edfee72 39-40,43,46,105-124,234-276,300-422,441,447-465,467-472,478-487,489-499,501,509-530,532-533,535-540,542-544,546-550,552-565,567-571,573-585,587-591,593-604,606-615,617-621,623-632,656-661,674-679,681,687,690-709,715-720,723-724,727,730,750-753,771-772,775,777,867-877,882-891,894-902,910-918,920,922-971,974-977,987,989,992-994,998-1023,1028-1036,1038-1046,1050-1089,1101-1110,1112-1125,1127-1146,1149-1157,1159-1186
+backend/app/routes/chat.py
+  h_c5a3d01edfee72 53,1238-1239,1647-1648
+backend/app/routes/grievance.py
+  h_c5a3d01edfee72 135-141,219-224
+backend/app/routes/voice.py
+  h_c5a3d01edfee72 1,7-8,10-12,20,40-41,62-65,73-82,89-96,98,101-120,124-127,129,134-137,141-146,150-173,184,200-205,211,214-220,222-223,227,233-235,238,242-243,249,251-255
+backend/app/services/rag_orchestrator.py
+  h_c5a3d01edfee72 556,561-566,575-581
+backend/app/services/voice_service.py
+  h_c5a3d01edfee72 1,3,14-15,18-19,21-29,41,52-57,59-68,70,72,74-85,92-103,108-111,115,118,120,122,129-140,147,149,156-167,175-184,188-194,197-209,215,219-231,233,236,239,242,244,246,253-265,275,282-294,305-310,313-325,331,335-347,349,352,355,358,362,369-381,386,391,398-410,415
+backend/app/speech_text.py
+  h_c5a3d01edfee72 36-43,54-57,68-76,84-113,119,128,152-154
+backend/tests/eval_rag_v3.py
+  h_c5a3d01edfee72 398-437,460-467,478-479,556-580,773-825,884-898
+backend/tests/test_eval_rag_metrics.py
+  h_c5a3d01edfee72 1-81
+backend/tests/test_gnani_voice.py
+  h_c5a3d01edfee72 578-755
+backend/tests/test_grievance_status_and_validation.py
+  h_c5a3d01edfee72 1-102
+backend/tests/test_voice_routes.py
+  h_c5a3d01edfee72 169-228
+docs/GNANI_INTEGRATION.md
+  h_c5a3d01edfee72 3,8,11-15,19-29,31,33,37-46,49-75,77-89,92-110,112,114-125,129,133,136-139
+frontend/README.md
+  h_c5a3d01edfee72 46
+frontend/package.json
+  h_c5a3d01edfee72 34
+frontend/src/components/chat/MessageBubble.tsx
+  h_c5a3d01edfee72 324-337,369
+frontend/src/components/chat/ThinkingProcess.tsx
+  h_c5a3d01edfee72 92,96-99,101-102,105,133-139
+frontend/src/lib/__tests__/speech.test.ts
+  h_c5a3d01edfee72 9,162-190,227-232
+frontend/src/lib/api.ts
+  h_c5a3d01edfee72 332-354,357-358,362,371
+frontend/src/lib/i18n/dictionaries.test.ts
+  h_c5a3d01edfee72 46-54
+frontend/src/lib/i18n/dictionaries.ts
+  h_c5a3d01edfee72 811-815,1210-1214,1480-1610,1958-2008,2295-2406,2692-2803,3089-3200,3554-3602,3888-3999,4285-4396
+frontend/src/lib/speech.ts
+  h_c5a3d01edfee72 124,136-143,188-189,204,299-325,473,481,491,498-504,507-514,538,550-559,561,587,605-613,618-631,645-649,655-656,660,665,679,742-756,763
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "93f4deb57ff0939e3a718f63b600b4689bd07287",
+  "prompts": {},
+  "humans": {
+    "h_c5a3d01edfee72": {
+      "author": "ronak-ravtode <ronakravtode001@gmail.com>"
+    }
+  }
+}
