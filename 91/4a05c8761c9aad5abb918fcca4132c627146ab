@@ -1,0 +1,639 @@
+.gitattributes
+  s_1fcee5c356c6f2::t_d22e552dc8815f 1
+.gitignore
+  s_1fcee5c356c6f2::t_b532211ed18522 1-45
+backend/app/db.py
+  s_1fcee5c356c6f2::t_e26d639f5dddb5 1-11
+backend/app/evidence/source_locator.py
+  s_1fcee5c356c6f2::t_e26dbe2a54b53c 1-939
+backend/app/grievance/draft_builder.py
+  s_1fcee5c356c6f2::t_31bb480ec583e7 1-364
+backend/app/grievance/entity_extractor.py
+  s_1fcee5c356c6f2::t_b0b1eaec0beca8 1-392
+backend/app/grievance/field_detector.py
+  s_1fcee5c356c6f2::t_13b2df585ff69f 1-551
+backend/app/grievance/followup_generator.py
+  s_1fcee5c356c6f2::t_cd2c3e1f302c7a 1-93
+backend/app/grievance/input_types.py
+  s_1fcee5c356c6f2::t_f54a48eca0134f 1-50
+backend/app/grievance/language_check.py
+  s_1fcee5c356c6f2::t_9720b7c6d0c542 1-46
+backend/app/grievance/models.py
+  s_1fcee5c356c6f2::t_507d504038d2f4 1-530
+backend/app/grievance/semantic_extractor.py
+  s_1fcee5c356c6f2::t_63a7c392ba3bdf 1-813
+backend/app/grievance/status_lookup.py
+  s_1fcee5c356c6f2::t_9d7e64ce6bb91b 1-178
+backend/app/grievance/submission_guide.py
+  s_1fcee5c356c6f2::t_4a9aa01306ee97 1-698
+backend/app/grievance/translations.py
+  s_1fcee5c356c6f2::t_6baa00add1e1f4 1-2721
+backend/app/key_rotator.py
+  s_1fcee5c356c6f2::t_22edd4b52de9b3 1-72
+backend/app/language.py
+  s_1fcee5c356c6f2::t_88d60217a3d4db 1-283
+backend/app/llm_fallback.py
+  s_1fcee5c356c6f2::t_d26abd4a5c552b 1-38
+backend/app/providers/base.py
+  s_1fcee5c356c6f2::t_74b367e68e2195 1-5
+backend/app/providers/groq_llm.py
+  s_1fcee5c356c6f2::t_7d8ac4f64d4536 1-136
+backend/app/providers/reranker.py
+  s_1fcee5c356c6f2::t_9f50aa61864409 1-92
+backend/app/providers/sarvam_chat.py
+  s_1fcee5c356c6f2::t_4c6b2d6de23a44 1-162
+backend/app/providers/sarvam_voice.py
+  s_1fcee5c356c6f2::t_8684e257e6f6f6 1-230
+backend/app/providers/translator.py
+  s_1fcee5c356c6f2::t_35808cfd95943a 1-74
+backend/app/retrieval/bm25_retriever.py
+  s_1fcee5c356c6f2::t_279ca8683e5737 1-203
+backend/app/retrieval/rrf.py
+  s_1fcee5c356c6f2::t_e6cb03fe86d4ec 1-83
+backend/app/routes/documents.py
+  s_1fcee5c356c6f2::t_f8f0948ca40ef9 1-52
+backend/app/routes/evidence.py
+  s_1fcee5c356c6f2::t_9154b27240875c 1-33
+backend/app/routes/translate.py
+  s_1fcee5c356c6f2::t_2cde2b1b5f6a3b 1-37
+backend/app/routes/webhooks.py
+  s_1fcee5c356c6f2::t_85cc357c053dad 1-129
+backend/app/scenario_reasoning.py
+  s_1fcee5c356c6f2::t_f9af0824b68182 1-762
+backend/app/security/source_verifier.py
+  s_1fcee5c356c6f2::t_38debb5c2e0bcf 1-2010
+backend/app/speech_text.py
+  s_1fcee5c356c6f2::t_7f734d8ca9159f 1-231
+backend/app/ui.py
+  s_1fcee5c356c6f2::t_e48dac89ca513e 1-24
+backend/app/web_rag/__init__.py
+  s_1fcee5c356c6f2::t_c5430d598e2311 1-43
+backend/app/web_rag/bm25_ranker.py
+  s_1fcee5c356c6f2::t_ab359509e266e2 1-122
+backend/app/web_rag/clusters.py
+  s_034dac3936f8e7::t_80db7a5695ab06 1-223
+backend/app/web_rag/diversity.py
+  s_034dac3936f8e7::t_8b108450dea7b9 1-142
+backend/app/web_rag/facets.py
+  s_034dac3936f8e7::t_a82ac84e5e703b 1-121
+backend/app/web_rag/identifiers.py
+  s_034dac3936f8e7::t_f47bb76a74e59b 1-192
+backend/app/web_rag/impersonation.py
+  s_034dac3936f8e7::t_d29e66cd5c5d17 1-151
+backend/app/web_rag/leads.py
+  s_034dac3936f8e7::t_0b3ab5184489ac 1-213
+backend/app/web_rag/mandate_map.json
+  s_034dac3936f8e7::t_35ebf61e5c6fff 1-670
+backend/app/web_rag/multilingual_lexicon.json
+  s_034dac3936f8e7::t_a5b66a3c0ec38c 1-437
+backend/app/web_rag/recovery.py
+  s_034dac3936f8e7::t_edb6a01d6a135e 1-232
+backend/app/web_rag/referrals.py
+  s_034dac3936f8e7::t_09404416a8aae8 1-174
+backend/app/web_rag/retrieval_scorer.py
+  s_034dac3936f8e7::t_28e5d9a4b411b0 1-655
+backend/app/web_rag/scheme_candidate.py
+  s_1fcee5c356c6f2::t_a6ec46937a5e5a 1-405
+backend/app/web_rag/scheme_exceptions.json
+  s_034dac3936f8e7::t_fe9e7d9fb7fc13 1-29
+backend/app/web_rag/status.py
+  s_034dac3936f8e7::t_20e97326065980 1-60
+backend/app/web_rag/validity.py
+  s_034dac3936f8e7::t_ab8af9935be4f0 1-546
+backend/app/web_rag/web_cleaner.py
+  s_1fcee5c356c6f2::t_14cca67bd5f8da 1-1075
+backend/data/domain_anchors.json
+  s_1fcee5c356c6f2::t_32d663ef4ff3d1 1-82
+backend/data/indexes/section_metadata.json
+  s_1fcee5c356c6f2::t_eeefca9b2dc3ec 1-14002
+backend/data/intelligence_patterns.json
+  s_1fcee5c356c6f2::t_85fa80869c4b18 1-49
+backend/data/language_config.json
+  s_1fcee5c356c6f2::t_172cb13611da9e 1-33
+backend/data/ui_strings.json
+  s_1fcee5c356c6f2::t_21cd943ff83a8a 1-7
+backend/ingest_seed.py
+  s_1fcee5c356c6f2::t_67bea38e442cf1 1-885
+backend/migrations/0001_init.sql
+  s_1fcee5c356c6f2::t_8ab2946a0b00b8 1-89
+backend/migrations/0002_chunk_identity.sql
+  s_1fcee5c356c6f2::t_b508743c08124c 1-89
+backend/migrations/0002_purge.sql
+  s_1fcee5c356c6f2::t_0a1bb984640fbc 1-2
+backend/migrations/0003_add_document_date_source_type.sql
+  s_1fcee5c356c6f2::t_4b83c43314a72a 1-10
+backend/migrations/0003_hybrid_search.sql
+  s_1fcee5c356c6f2::t_775ca91a5b06f4 1-89
+backend/migrations/0004_atomic_replace_document.sql
+  s_1fcee5c356c6f2::t_4d8bd64c9a680e 1-66
+backend/migrations/0004_effective_date_filter.sql
+  s_1fcee5c356c6f2::t_c3e14402831ad8 1-123
+backend/migrations/0004_messages_table.sql
+  s_1fcee5c356c6f2::t_c79054f062bb5e 1-11
+backend/migrations/0005_rag_contracts.sql
+  s_1fcee5c356c6f2::t_95373581e00950 1-129
+backend/migrations/0006_messages_table.sql
+  s_1fcee5c356c6f2::t_06a5b4ac8a1f12 1-11
+backend/migrations/combined_migration.sql
+  s_1fcee5c356c6f2::t_047636666cf7bc 1-173
+backend/pyproject.toml
+  s_1fcee5c356c6f2::t_77b1a6769e6efe 1-62
+backend/seed_parser.py
+  s_1fcee5c356c6f2::t_a2b035d14de6b1 1-215
+backend/tests/e2e_real_pipeline.py
+  s_1fcee5c356c6f2::t_5d1f430d9fe961 1-72
+backend/tests/eval_rag_v3.py
+  s_1fcee5c356c6f2::t_afeb48a0794dbd 1-856
+backend/tests/providers/test_sarvam_chat.py
+  s_1fcee5c356c6f2::t_31700e62ff9da7 1-129
+backend/tests/test_answer_grounding.py
+  s_70fd9bd7aaa3a9::t_15c49869a071a9 1-323
+backend/tests/test_authority_p0.py
+  s_034dac3936f8e7::t_d076e80efc6641 1-310
+backend/tests/test_azure_voice.py
+  s_1fcee5c356c6f2::t_bb2743f05d194e 1-99
+backend/tests/test_canonical_normalization.py
+  s_1fcee5c356c6f2::t_30651caa483043 1-615
+backend/tests/test_chat_citation_route.py
+  s_1fcee5c356c6f2::t_0ac867e9473835 1-106
+backend/tests/test_chat_route_refactored.py
+  s_1fcee5c356c6f2::t_25b65de687fb54 1-654
+backend/tests/test_citation_coverage.py
+  s_1fcee5c356c6f2::t_cf74c2d10fe275 1-95
+backend/tests/test_clusters_p1.py
+  s_034dac3936f8e7::t_3e67ab1595bed3 1-182
+backend/tests/test_contract.py
+  s_034dac3936f8e7::t_35a041c0328800 1-221
+backend/tests/test_contracts.py
+  s_1fcee5c356c6f2::t_2d350c3f76d39d 1-317
+backend/tests/test_contracts_evidence_chunk.py
+  s_1fcee5c356c6f2::t_028678cdc73e07 1-133
+backend/tests/test_diversity_p1.py
+  s_034dac3936f8e7::t_a46b6ce3fc3d2e 1-134
+backend/tests/test_documents_pdf_serving.py
+  s_1fcee5c356c6f2::t_9d6b9a489df7ff 1-94
+backend/tests/test_domains.py
+  s_1fcee5c356c6f2::t_ab346e6f258ad4 1-36
+backend/tests/test_evaluation_grounding.py
+  s_1fcee5c356c6f2::t_b015985079d177 1-192
+backend/tests/test_evidence_assessment.py
+  s_1fcee5c356c6f2::t_2527412c17a233 1-159
+backend/tests/test_evidence_gate.py
+  s_1fcee5c356c6f2::t_d147db4c7cf595 1-165
+backend/tests/test_evidence_gate_unified.py
+  s_1fcee5c356c6f2::t_9dab3f29de55e1 1-199
+backend/tests/test_grievance_area_state_fix.py
+  s_1fcee5c356c6f2::t_8a1e57bcc3630d 1-516
+backend/tests/test_grievance_draft_builder.py
+  s_1fcee5c356c6f2::t_664feb21a7729d 1-212
+backend/tests/test_grievance_field_detector.py
+  s_1fcee5c356c6f2::t_8831301d395936 1-161
+backend/tests/test_grievance_fixes_abc.py
+  s_1fcee5c356c6f2::t_6ebb266662ea88 1-540
+backend/tests/test_grievance_fixes_locality_url_desc.py
+  s_1fcee5c356c6f2::t_892291229d947f 1-428
+backend/tests/test_grievance_intent_regression.py
+  s_1fcee5c356c6f2::t_bf6cce6de06d43 1-33
+backend/tests/test_grievance_language_fix.py
+  s_1fcee5c356c6f2::t_bd6d1234383103 1-515
+backend/tests/test_grievance_localization.py
+  s_1fcee5c356c6f2::t_8ed8ac01b19f3b 1-221
+backend/tests/test_grievance_regression_fixes.py
+  s_1fcee5c356c6f2::t_5b6d8b9cabcff3 1-580
+backend/tests/test_grievance_semantic_extractor.py
+  s_1fcee5c356c6f2::t_7286becfbad709 1-362
+backend/tests/test_grievance_stale_regression.py
+  s_1fcee5c356c6f2::t_a171895636e7f2 1-99
+backend/tests/test_grievance_stale_state.py
+  s_1fcee5c356c6f2::t_e10f12a00ed0a7 1-358
+backend/tests/test_grievance_structured_response.py
+  s_1fcee5c356c6f2::t_d09fd2e5c6c219 1-534
+backend/tests/test_grievance_submission_guide.py
+  s_1fcee5c356c6f2::t_c1d2f5a72b1ed0 1-495
+backend/tests/test_health.py
+  s_1fcee5c356c6f2::t_3d3e6a3d0a6d64 1-17
+backend/tests/test_identifiers_p1.py
+  s_034dac3936f8e7::t_6c6ff236ea194f 1-154
+backend/tests/test_impersonation_p1.py
+  s_034dac3936f8e7::t_f282d16f26248f 1-157
+backend/tests/test_informational_regex.py
+  s_1fcee5c356c6f2::t_79604eb94e2733 1-123
+backend/tests/test_integration_sarvam.py
+  s_1fcee5c356c6f2::t_2fafcb4a50b93d 1-49
+backend/tests/test_lang_memory.py
+  s_1fcee5c356c6f2::t_2970f0f501ea3f 1-36
+backend/tests/test_language.py
+  s_1fcee5c356c6f2::t_feeff1667ff20b 1-61
+backend/tests/test_language_boundary.py
+  s_1fcee5c356c6f2::t_e011ac7ae5639b 1-483
+backend/tests/test_language_boundary_e2e.py
+  s_1fcee5c356c6f2::t_8789f16849d375 1-368
+backend/tests/test_language_mix.py
+  s_1fcee5c356c6f2::t_2275cb44ee0cde 1-43
+backend/tests/test_leads_p1.py
+  s_034dac3936f8e7::t_9e50aaa0ee3ae2 1-253
+backend/tests/test_llm_failure_injection.py
+  s_1fcee5c356c6f2::t_40581540d51920 1-145
+backend/tests/test_llm_fallback.py
+  s_1fcee5c356c6f2::t_1d0db868fa4e89 1-29
+backend/tests/test_metadata_filtering.py
+  s_1fcee5c356c6f2::t_b67ac2763a4217 1-254
+backend/tests/test_migration_0005.py
+  s_1fcee5c356c6f2::t_150fd80f77ce28 1-114
+backend/tests/test_multilingual_p2.py
+  s_034dac3936f8e7::t_b5e4e54d8fa1f6 1-191
+backend/tests/test_rag_refactor.py
+  s_1fcee5c356c6f2::t_2027ce61103543 1-152
+backend/tests/test_rag_translation_protection.py
+  s_70fd9bd7aaa3a9::t_72624242bedd7a 1-71
+backend/tests/test_referral_p1.py
+  s_034dac3936f8e7::t_1b0036b8f9ef77 1-162
+backend/tests/test_resolve_response_language.py
+  s_1fcee5c356c6f2::t_4a42007b0ebdeb 1-55
+backend/tests/test_retrieval.py
+  s_1fcee5c356c6f2::t_80e06204f08b0f 1-41
+backend/tests/test_retrieval_scenarios.py
+  s_1fcee5c356c6f2::t_ff7cb5f1c0e2eb 1-775
+backend/tests/test_routing_hierarchy.py
+  s_1fcee5c356c6f2::t_d5b8beb702c6d7 1-124
+backend/tests/test_sarvam_translation_fixes.py
+  s_70fd9bd7aaa3a9::t_b0e047567a296d 1-573
+backend/tests/test_sarvam_translator.py
+  s_1fcee5c356c6f2::t_a485ad56d9aad9 1-414
+backend/tests/test_scenario_reasoning.py
+  s_1fcee5c356c6f2::t_691c624871407c 1-765
+backend/tests/test_schema_smoke.py
+  s_1fcee5c356c6f2::t_ae1ad541a6b7a3 1-19
+backend/tests/test_serpapi_client.py
+  s_034dac3936f8e7::t_2c3931185f2cba 1-351
+backend/tests/test_services_rag_orchestrator.py
+  s_70fd9bd7aaa3a9::t_87195ca0bd3543 1-1078
+backend/tests/test_speech_text.py
+  s_1fcee5c356c6f2::t_c5d6243ee148ff 1-467
+backend/tests/test_status_p1.py
+  s_034dac3936f8e7::t_a06b91f5c31ecf 1-120
+backend/tests/test_strip_citations.py
+  s_1fcee5c356c6f2::t_afed521cf0b478 1-56
+backend/tests/test_table_formatting.py
+  s_70fd9bd7aaa3a9::t_1224568d0215aa 1-155
+backend/tests/test_translator.py
+  s_1fcee5c356c6f2::t_f1c29096a673c0 1-53
+backend/tests/test_validity_p0.py
+  s_034dac3936f8e7::t_fa7969c498e928 1-342
+backend/tests/test_voice_routes.py
+  s_1fcee5c356c6f2::t_44afc2f34617d2 1-168
+backend/tests/test_web_rag_deadline.py
+  s_034dac3936f8e7::t_b33c49795b358b 1-246
+corpus/manifests/hold_sources.yaml
+  s_1fcee5c356c6f2::t_c194e31dc4a7ba 1-243
+corpus/manifests/mvp_sources.yaml
+  s_1fcee5c356c6f2::t_34ccae7db00e22 1-1074
+"corpus/seeds/Corrigendum and letter Jun 12, 2023.md"
+  s_1fcee5c356c6f2::t_ffe5fc1cd4fdb5 1-80
+"corpus/seeds/Model Byelaws 05.01.2023.md"
+  s_1fcee5c356c6f2::t_ab81b92abe4991 1-911
+corpus/seeds/NSFI_2025_30.md
+  s_1fcee5c356c6f2::t_576fbbd15e1d23 1-80
+"corpus/seeds/Revised Scheme guidelines (Computerization of PACS project).md"
+  s_1fcee5c356c6f2::t_e7e1b20b0528a1 1-593
+corpus/seeds/chunks_jsonl/Cooperative_Sugar_Mills_CSM_Scheme.jsonl
+  s_1fcee5c356c6f2::t_400b8fc83d125a 1-57
+"corpus/seeds/chunks_jsonl/Corrigendum and letter Jun 12, 2023.jsonl"
+  s_1fcee5c356c6f2::t_23557d714edf38 1-33
+corpus/seeds/chunks_jsonl/Introduction_To_Insurance_IRDAI.jsonl
+  s_1fcee5c356c6f2::t_0b46d74810aa03 1-1058
+corpus/seeds/chunks_jsonl/MoC_Young_Professionals_YPs.jsonl
+  s_1fcee5c356c6f2::t_f74fd77cdbe82f 1-611
+"corpus/seeds/chunks_jsonl/Model Byelaws 05.01.2023.jsonl"
+  s_1fcee5c356c6f2::t_236f63d387b192 1-393
+corpus/seeds/chunks_jsonl/Model_HR_Policy_V21.jsonl
+  s_1fcee5c356c6f2::t_8c26fe85cd35ab 1-1618
+corpus/seeds/chunks_jsonl/NSFI_2025_30.jsonl
+  s_1fcee5c356c6f2::t_30cf6046e1eadd 1-526
+corpus/seeds/chunks_jsonl/RBI_BEAWARE_Financial_Fraud_Awareness.jsonl
+  s_1fcee5c356c6f2::t_66b8fe6ceec5c7 1-773
+corpus/seeds/chunks_jsonl/RBI_FAME_Financial_Awareness_Messages.jsonl
+  s_1fcee5c356c6f2::t_327f138d5c5022 1-1330
+"corpus/seeds/chunks_jsonl/Revised Scheme guidelines (Computerization of PACS project).jsonl"
+  s_1fcee5c356c6f2::t_4c1e31dc3ef473 1-213
+corpus/seeds/chunks_jsonl/operational_guidelines_pmfby.jsonl
+  s_1fcee5c356c6f2::t_bcb8278a1613a4 1-1379
+"corpus/seeds/json_files/Corrigendum and letter Jun 12, 2023_content_list.json"
+  s_1fcee5c356c6f2::t_201536714691b7 1-507
+"corpus/seeds/json_files/Corrigendum and letter Jun 12, 2023_content_list_v2.json"
+  s_1fcee5c356c6f2::t_3f9643bc441095 1-785
+"corpus/seeds/json_files/Corrigendum and letter Jun 12, 2023_middle.json"
+  s_1fcee5c356c6f2::t_c32c05148995f9 1-5072
+"corpus/seeds/json_files/Corrigendum and letter Jun 12, 2023_model.json"
+  s_1fcee5c356c6f2::t_80dd8054b2552c 1-1627
+"corpus/seeds/json_files/Model Byelaws 05.01.2023_content_list.json"
+  s_1fcee5c356c6f2::t_d02b3895edc88e 1-5608
+"corpus/seeds/json_files/Model Byelaws 05.01.2023_content_list_v2.json"
+  s_1fcee5c356c6f2::t_7d1c22e3904975 1-8688
+"corpus/seeds/json_files/Model Byelaws 05.01.2023_middle.json"
+  s_1fcee5c356c6f2::t_1b7d22d00e678a 1-59433
+"corpus/seeds/json_files/Model Byelaws 05.01.2023_model.json"
+  s_1fcee5c356c6f2::t_f775ec0171af20 1-18146
+corpus/seeds/json_files/NSFI_2025_30_content_list.json
+  s_1fcee5c356c6f2::t_819c01def4800e 1-10987
+corpus/seeds/json_files/NSFI_2025_30_content_list_v2.json
+  s_1fcee5c356c6f2::t_6776a0199082ad 1-16650
+corpus/seeds/json_files/NSFI_2025_30_middle.json
+  s_1fcee5c356c6f2::t_783758c4feb427 1-171731
+"corpus/seeds/json_files/Revised Scheme guidelines (Computerization of PACS project)_content_list.json"
+  s_1fcee5c356c6f2::t_c59cc3f5a05923 1-3548
+"corpus/seeds/json_files/Revised Scheme guidelines (Computerization of PACS project)_content_list_v2.json"
+  s_1fcee5c356c6f2::t_173fac3d36b1ce 1-5758
+"corpus/seeds/json_files/Revised Scheme guidelines (Computerization of PACS project)_middle.json"
+  s_1fcee5c356c6f2::t_f3224bb3858a78 1-36127
+"corpus/seeds/json_files/Revised Scheme guidelines (Computerization of PACS project)_model.json"
+  s_1fcee5c356c6f2::t_90e79002677d57 1-11112
+corpus/seeds/json_files/operational_guidelines_pmfby_content_list.json
+  s_1fcee5c356c6f2::t_9cc2022288652d 1-26204
+corpus/seeds/json_files/operational_guidelines_pmfby_content_list_v2.json
+  s_1fcee5c356c6f2::t_682daa7b141da2 1-42451
+corpus/seeds/json_files/operational_guidelines_pmfby_middle.json
+  s_1fcee5c356c6f2::t_b521582ba1ff43 1-378463
+corpus/seeds/json_files/operational_guidelines_pmfby_model.json
+  s_1fcee5c356c6f2::t_e05e88ca2d23cf 1-117347
+corpus/seeds/operational_guidelines_pmfby.md
+  s_1fcee5c356c6f2::t_6b23f2728ae7b7 1-3121
+docs/e2e_baseline_report.md
+  s_1fcee5c356c6f2::t_42c2a16559e50b 1-191
+docs/e2e_implementation_report.md
+  s_1fcee5c356c6f2::t_1f97226b0f5525 1-144
+docs/embedding_provenance_fix_report.md
+  s_1fcee5c356c6f2::t_a20ae54ac59e7b 1-96
+docs/phase2a_preimplementation_audit.md
+  s_1fcee5c356c6f2::t_f8382ea78dae08 1-416
+docs/quick_verify.sql
+  s_1fcee5c356c6f2::t_97fc9c2ea23b2d 1-35
+docs/quick_verify_fixed.sql
+  s_1fcee5c356c6f2::t_b7df9e686f712c 1-55
+docs/rag_foundation_final_report.md
+  s_1fcee5c356c6f2::t_120461fb2d4280 1-151
+docs/rag_foundation_final_status.md
+  s_1fcee5c356c6f2::t_f0bee4f6405b1f 1-106
+docs/rag_foundation_repair_report.md
+  s_1fcee5c356c6f2::t_f100d7c0a95456 1-153
+docs/rag_refactor/execution_plan.md
+  s_1fcee5c356c6f2::t_eb8036e6f320a4 1-365
+docs/rag_refactor/mvp_plan.md
+  s_1fcee5c356c6f2::t_84d47c82fc2067 1-119
+docs/rag_refactor/mvp_verification_report.md
+  s_1fcee5c356c6f2::t_e29378c4444c92 1-173
+docs/rag_refactor/stage_reconciliation.md
+  s_1fcee5c356c6f2::t_ff13e1155d3278 1-225
+docs/rag_repair_baseline.md
+  s_1fcee5c356c6f2::t_918844e85bc83d 1-123
+docs/supabase_manual_sql.sql
+  s_1fcee5c356c6f2::t_af47d948a1a4b7 1-181
+docs/superpowers/plans/2026-09-03-rag-architecture-redesign.md
+  s_1fcee5c356c6f2::t_f99c1e3613258c 1-1808
+docs/superpowers/plans/2026-09-04-evidence-controller-implementation.md
+  s_1fcee5c356c6f2::t_e692e0a655bec2 1-1121
+docs/superpowers/plans/2026-09-04-sarvam-llm-migration.md
+  s_1fcee5c356c6f2::t_1d299682176c0b 1-1581
+docs/superpowers/plans/2026-09-13-clay-runway-ui-refactor.md
+  s_1fcee5c356c6f2::t_ae7ecc16f1b30e 1-1210
+docs/superpowers/plans/2026-09-15-thinking-process-animation.md
+  s_1fcee5c356c6f2::t_6954867bfa1022 1-855
+docs/superpowers/plans/2026-09-17-clerk-authentication.md
+  s_1fcee5c356c6f2::t_fbe09159631398 1-959
+docs/superpowers/plans/2026-09-17-evidence-grounding-plan.md
+  s_1fcee5c356c6f2::t_3fc447ebef6675 1-1164
+docs/superpowers/plans/2026-10-05-nextjs-to-react-vite-migration.md
+  s_034dac3936f8e7::t_34e7b2babd76d5 1-2816
+docs/superpowers/specs/2026-09-03-rag-architecture-redesign.md
+  s_1fcee5c356c6f2::t_1cd017a26656d2 1-294
+docs/superpowers/specs/2026-09-04-evidence-controller-design.md
+  s_1fcee5c356c6f2::t_d96f483ae61b48 1-667
+docs/superpowers/specs/2026-09-04-sarvam-llm-migration-design.md
+  s_1fcee5c356c6f2::t_7cd10bf4c0dd63 1-420
+docs/superpowers/specs/2026-09-13-clay-runway-ui-refactor.md
+  s_1fcee5c356c6f2::t_762aba0a0f646a 1-263
+docs/superpowers/specs/2026-09-15-thinking-process-animation-design.md
+  s_1fcee5c356c6f2::t_3c96aefbdea197 1-145
+docs/superpowers/specs/2026-09-17-clerk-authentication-design.md
+  s_1fcee5c356c6f2::t_7bd0e41112faad 1-300
+docs/superpowers/specs/2026-09-17-evidence-grounding-design.md
+  s_1fcee5c356c6f2::t_3dcffe22ec3ddb 1-202
+frontend/.env.example
+  s_034dac3936f8e7::t_867e753b1f1ba5 1-23
+frontend/.gitignore
+  s_70fd9bd7aaa3a9::t_c908dae2ae71e4 1-7
+frontend/eslint.config.js
+  s_034dac3936f8e7::t_ca8545f49cf3ac 1-57
+frontend/index.html
+  s_034dac3936f8e7::t_6581b83560cd59 1-33
+frontend/package.json
+  s_034dac3936f8e7::t_fb9c2c1c6c83f1 1-56
+frontend/scripts/i18n-coverage.mjs
+  s_034dac3936f8e7::t_f74a1d589371e2 1-66
+frontend/src/components/EvidenceBand.tsx
+  s_1fcee5c356c6f2::t_c0265a20dcbef5 1-16
+frontend/src/components/__tests__/ChatWindow.test.tsx
+  s_034dac3936f8e7::t_acc9463436d06c 1-187
+frontend/src/components/chat/GrievanceCard.tsx
+  s_034dac3936f8e7::t_81dda8267da146 1-341
+frontend/src/components/chat/GrievanceClassificationPanel.tsx
+  s_034dac3936f8e7::t_2f7a66bf064c58 1-152
+frontend/src/components/chat/GrievanceFieldPanel.tsx
+  s_034dac3936f8e7::t_1ac6ec9ad78c50 1-217
+frontend/src/components/chat/GrievanceFlow.tsx
+  s_034dac3936f8e7::t_81e91c18f31f29 1-251
+frontend/src/components/chat/MessageBubble.module.css
+  s_034dac3936f8e7::t_330d663dd83c49 1-21
+frontend/src/components/chat/__tests__/EvidencePanel.test.tsx
+  s_034dac3936f8e7::t_2bde1c0d484b7b 1-268
+frontend/src/components/chat/__tests__/GrievanceCard.test.tsx
+  s_034dac3936f8e7::t_b96a2eb076142e 1-120
+frontend/src/components/chat/__tests__/GrievanceFlow.test.tsx
+  s_034dac3936f8e7::t_9dc675f40b1b01 1-276
+frontend/src/components/chat/__tests__/MessageBubble.test.tsx
+  s_1fcee5c356c6f2::t_6b00b24fe4745f 1-85
+frontend/src/components/layout/ConditionalNavs.tsx
+  s_034dac3936f8e7::t_453da64eab0ef0 1-20
+frontend/src/components/layout/Footer.tsx
+  s_034dac3936f8e7::t_f41cd3bfee53cc 1-85
+frontend/src/components/layout/HamburgerMenu.tsx
+  s_034dac3936f8e7::t_68e353409dd7a2 1-88
+frontend/src/components/layout/LanguageSwitcher.tsx
+  s_034dac3936f8e7::t_bd471c391b213c 1-106
+frontend/src/components/motion/Reveal.tsx
+  s_034dac3936f8e7::t_3f783e7c0c299e 1-68
+frontend/src/components/motion/Stagger.tsx
+  s_034dac3936f8e7::t_3125bbbf80cf01 1-64
+frontend/src/components/motion/gsap.ts
+  s_034dac3936f8e7::t_d9ef691dbc24a7 1-6
+frontend/src/components/motion/usePrefersReducedMotion.ts
+  s_034dac3936f8e7::t_3e241f5929652b 1-21
+frontend/src/components/ui/Alert.tsx
+  s_1fcee5c356c6f2::t_4d06d15a5489d7 1-52
+frontend/src/components/ui/ArcCarousel.tsx
+  s_034dac3936f8e7::t_5a095cdadacb59 1-281
+frontend/src/components/ui/Badge.tsx
+  s_1fcee5c356c6f2::t_e842bbd5149f5b 1-37
+frontend/src/components/ui/Button.tsx
+  s_1fcee5c356c6f2::t_39c6c11f8b1096 1-66
+frontend/src/components/ui/Card.tsx
+  s_1fcee5c356c6f2::t_8b7fbef67f9d4a 1-43
+frontend/src/components/ui/Chips.tsx
+  s_1fcee5c356c6f2::t_cac3a6b631daa9 1-39
+frontend/src/components/ui/CountUp.tsx
+  s_034dac3936f8e7::t_10db9a91b9d76f 1-37
+frontend/src/components/ui/EmptyState.tsx
+  s_1fcee5c356c6f2::t_ea1c32ebd2b96b 1-25
+frontend/src/components/ui/Icons.tsx
+  s_1fcee5c356c6f2::t_056f353d96b0f0 1-361
+frontend/src/components/ui/Input.tsx
+  s_1fcee5c356c6f2::t_aead7348d154b6 1-32
+frontend/src/components/ui/Marquee.tsx
+  s_034dac3936f8e7::t_9a41739c4bef72 1-32
+frontend/src/components/ui/Select.tsx
+  s_1fcee5c356c6f2::t_334aa9ebb3c226 1-22
+frontend/src/components/ui/Skeleton.tsx
+  s_1fcee5c356c6f2::t_bc80c6cfd90f1a 1-5
+frontend/src/components/ui/Stepper.tsx
+  s_1fcee5c356c6f2::t_3dc97cb8298d53 1-44
+frontend/src/lib/band.test.ts
+  s_1fcee5c356c6f2::t_fb0e00a607bb74 1-8
+frontend/src/lib/band.ts
+  s_1fcee5c356c6f2::t_d73e7c00c93d7e 1-11
+frontend/src/lib/data/accent.ts
+  s_1fcee5c356c6f2::t_ca8d8999a63d70 1-6
+frontend/src/lib/data/data.test.ts
+  s_1fcee5c356c6f2::t_f23bf443a7911f 1-30
+frontend/src/lib/data/deco.ts
+  s_1fcee5c356c6f2::t_918468614267f6 1-80
+frontend/src/lib/data/faq.test.ts
+  s_1fcee5c356c6f2::t_617d7bef524edf 1-12
+frontend/src/lib/data/faq.ts
+  s_1fcee5c356c6f2::t_4e8365805a84b0 1-111
+frontend/src/lib/data/grievance.ts
+  s_1fcee5c356c6f2::t_6a6873a52c7718 1-67
+frontend/src/lib/data/i18n.test.ts
+  s_1fcee5c356c6f2::t_edf097229c511b 1-22
+frontend/src/lib/data/i18n.ts
+  s_1fcee5c356c6f2::t_35bfec0561d210 1-11
+frontend/src/lib/data/index.ts
+  s_1fcee5c356c6f2::t_19c68306e3df2f 1-8
+frontend/src/lib/data/legal.test.ts
+  s_1fcee5c356c6f2::t_65a65b62522663 1-14
+frontend/src/lib/data/legal.ts
+  s_1fcee5c356c6f2::t_196f9e36b3d972 1-897
+frontend/src/lib/data/library.ts
+  s_1fcee5c356c6f2::t_cbb4b1e11fd70c 1-45
+frontend/src/lib/data/schemes.test.ts
+  s_1fcee5c356c6f2::t_cb39e4d1ca0d80 1-12
+frontend/src/lib/data/schemes.ts
+  s_1fcee5c356c6f2::t_768711ef51d1bd 1-232
+frontend/src/lib/data/services.test.ts
+  s_1fcee5c356c6f2::t_5083d2fedc6226 1-15
+frontend/src/lib/data/services.ts
+  s_1fcee5c356c6f2::t_8636c2b500d08b 1-147
+frontend/src/lib/i18n/dictionaries.test.ts
+  s_034dac3936f8e7::t_f461325e9a0989 1-54
+frontend/src/lib/i18n/dictionaries.ts
+  s_70fd9bd7aaa3a9::t_c4c81ca7668fa4 1-3609
+frontend/src/lib/i18n/formatQuery.ts
+  s_1fcee5c356c6f2::t_68301924d83633 1-55
+frontend/src/lib/i18n/i18n.test.ts
+  s_034dac3936f8e7::t_e260ae1cfc7661 1-26
+frontend/src/lib/i18n/i18n.ts
+  s_1fcee5c356c6f2::t_f99a314c062949 1-2
+frontend/src/lib/i18n/provider.tsx
+  s_034dac3936f8e7::t_379ee0e0dd248e 1-72
+frontend/src/lib/translator.test.ts
+  s_1fcee5c356c6f2::t_3f71359ed7e246 1-38
+frontend/src/lib/translator.ts
+  s_034dac3936f8e7::t_b20b45640e30dc 1-75
+frontend/src/lib/useTranslate.ts
+  s_034dac3936f8e7::t_f96642e13c3c75 1-18
+frontend/src/lib/useTranslatedFields.ts
+  s_034dac3936f8e7::t_93add4ab11bb65 1-102
+frontend/src/main.tsx
+  s_034dac3936f8e7::t_48223d68968788 1-57
+frontend/src/pages/ChatPage.tsx
+  s_034dac3936f8e7::t_e7d5a1b54cb7bf 1-6
+frontend/src/pages/FaqPage.tsx
+  s_034dac3936f8e7::t_49e55cc433974c 1-258
+frontend/src/pages/GrievanceDraftViewPage.tsx
+  s_034dac3936f8e7::t_a6c36fbf848892 1-173
+frontend/src/pages/GrievanceStatusPage.tsx
+  s_034dac3936f8e7::t_a61ffef1aa8c8d 1-102
+frontend/src/pages/HomePage.tsx
+  s_034dac3936f8e7::t_73383a9267a50a 1-339
+frontend/src/pages/LegalDetailPage.tsx
+  s_034dac3936f8e7::t_678b5830906ba3 1-258
+frontend/src/pages/LegalPage.tsx
+  s_034dac3936f8e7::t_b9f610bcae42b5 1-217
+frontend/src/pages/LibraryPage.tsx
+  s_034dac3936f8e7::t_a5a71e6addf085 1-85
+frontend/src/pages/NotFoundPage.tsx
+  s_034dac3936f8e7::t_ee726e8ea83f34 1-26
+frontend/src/pages/SchemeDetailPage.tsx
+  s_034dac3936f8e7::t_6dfd306de5c087 1-346
+frontend/src/pages/SchemesPage.tsx
+  s_034dac3936f8e7::t_7230efdf766422 1-248
+frontend/src/pages/ServiceDetailPage.tsx
+  s_034dac3936f8e7::t_644f39d1e317f5 1-250
+frontend/src/pages/ServicesPage.tsx
+  s_034dac3936f8e7::t_d29f513f526c83 1-260
+frontend/src/pages/SignUpPage.tsx
+  s_034dac3936f8e7::t_df9f65c591c3cb 1-9
+frontend/src/styles/document.css
+  s_034dac3936f8e7::t_93bf16f6aeef8f 1-36
+frontend/src/styles/globals.css
+  s_034dac3936f8e7::t_4b1c01aaf5d7aa 1-464
+frontend/src/types/speech-recognition.d.ts
+  s_1fcee5c356c6f2::t_47125ff70f89cc 1-52
+frontend/src/vite-env.d.ts
+  s_034dac3936f8e7::t_b7574727486d28 1
+frontend/tsconfig.json
+  s_034dac3936f8e7::t_ed37cec4a32fda 1-22
+frontend/vercel.json
+  s_70fd9bd7aaa3a9::t_045c9d33097c0c 1-7
+frontend/vitest.config.mjs
+  s_034dac3936f8e7::t_e880d0a479c9cc 1-25
+render.yaml
+  s_70fd9bd7aaa3a9::t_332a02d697da29 1-14
+sources.yaml
+  s_1fcee5c356c6f2::t_9b79ef4e7f54fc 1-129
+supabase/migrations/20260828211256_rag_contracts.sql
+  s_1fcee5c356c6f2::t_cb0b3e1562d9ae 1-129
+supabase/migrations/20260831_conversations_evidence_grievance.sql
+  s_1fcee5c356c6f2::t_3102240cee75c8 1-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "914a05c8761c9aad5abb918fcca4132c627146ab",
+  "prompts": {},
+  "sessions": {
+    "s_034dac3936f8e7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ef43a185effeTrsGmdK53k712z",
+        "model": "unknown"
+      },
+      "human_author": "ronak-ravtode <ronakravtode001@gmail.com>"
+    },
+    "s_1fcee5c356c6f2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ef449e9dfffe7sYGV8iw4WLrn4",
+        "model": "unknown"
+      },
+      "human_author": "ronak-ravtode <ronakravtode001@gmail.com>"
+    },
+    "s_70fd9bd7aaa3a9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ed9a2a13cffe0oDHrUuoYkatjG",
+        "model": "unknown"
+      },
+      "human_author": "ronak-ravtode <ronakravtode001@gmail.com>"
+    }
+  }
+}
